@@ -9,15 +9,24 @@ def read_housing() -> pd.DataFrame:
     target_filename = path.join(current_dir, "beijing_housing_prepared.csv")
     if path.exists(target_filename):
         return pd.read_csv(target_filename)
+
+    def to_float(raw):
+        try:
+            return float(raw)
+        except:
+            return np.nan
+
     housing = pd.read_csv(
         path.join(current_dir, "beijing_housing.csv"),
         header=0,
-        dtype={"price": np.float64, "Lng": np.float64, "Lat": np.float64},
+        converters={"均价": to_float, "经度_WGS1984坐标": to_float, "纬度_WGS1984坐标": to_float},
     )
-    housing = housing[["price", "Lng", "Lat"]]
-    housing.rename(columns={"Lng": "lng", "Lat": "lat"}, inplace=True)
-    housing.dropna(subset=["price", "lng", "lat"], inplace=True)
-    housing.to_csv(target_filename)
+    housing = housing[["均价", "经度_WGS1984坐标", "纬度_WGS1984坐标"]]
+    housing.rename(
+        columns={"均价": "price", "经度_WGS1984坐标": "lng", "纬度_WGS1984坐标": "lat"},
+        inplace=True,
+    )
+    housing.dropna(axis="index", subset=["price", "lng", "lat"], inplace=True)
     return housing
 
 

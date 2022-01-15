@@ -1,47 +1,49 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:                  price   R-squared:                       0.379
-Model:                            OLS   Adj. R-squared:                  0.379
-Method:                 Least Squares   F-statistic:                     8469.
-Date:                Fri, 14 Jan 2022   Prob (F-statistic):               0.00
-Time:                        18:53:17   Log-Likelihood:            -3.5603e+06
-No. Observations:              318851   AIC:                         7.121e+06
-Df Residuals:                  318827   BIC:                         7.121e+06
+Dep. Variable:                  price   R-squared:                       0.732
+Model:                            OLS   Adj. R-squared:                  0.731
+Method:                 Least Squares   F-statistic:                     863.3
+Date:                Sun, 16 Jan 2022   Prob (F-statistic):               0.00
+Time:                        00:07:06   Log-Likelihood:                -80268.
+No. Observations:                7284   AIC:                         1.606e+05
+Df Residuals:                    7260   BIC:                         1.607e+05
 Df Model:                          23                                         
 Covariance Type:            nonrobust                                         
 =======================================================================================================
                                           coef    std err          t      P>|t|      [0.025      0.975]
 -------------------------------------------------------------------------------------------------------
-Intercept                            4.353e+04     30.292   1437.040      0.000    4.35e+04    4.36e+04
-AutoService                         -2795.2101    434.122     -6.439      0.000   -3646.077   -1944.344
-AutoDealers                          2.135e+04    596.551     35.787      0.000    2.02e+04    2.25e+04
-AutoRepair                          -2.136e+04    715.791    -29.836      0.000   -2.28e+04      -2e+04
-MotorcycleService                    -294.5549    139.481     -2.112      0.035    -567.933     -21.177
-FoodBeverages                        2365.2230    758.868      3.117      0.002     877.863    3852.583
-Shopping                            -2.258e+04    771.771    -29.258      0.000   -2.41e+04   -2.11e+04
-DailyLifeService                      436.3556    595.200      0.733      0.463    -730.220    1602.931
-SportsRecreation                    -1.403e+04    622.296    -22.549      0.000   -1.53e+04   -1.28e+04
-MedicalService                      -2581.3343    775.719     -3.328      0.001   -4101.720   -1060.948
-AccommodationService                 7491.3525    732.145     10.232      0.000    6056.369    8926.336
-TouristAttraction                    2.569e+04    482.660     53.226      0.000    2.47e+04    2.66e+04
-CommercialHouse                      1.904e+04    477.614     39.874      0.000    1.81e+04       2e+04
-GovernmentalOrganizationSocialGroup  5759.8838    495.622     11.622      0.000    4788.479    6731.289
-ScienceCultureEducationService       1.325e+04    428.633     30.905      0.000    1.24e+04    1.41e+04
-TransportationService                1.282e+04    566.056     22.652      0.000    1.17e+04    1.39e+04
-FinanceInsuranceService             -4226.0601    555.075     -7.613      0.000   -5313.992   -3138.128
-Enterprises                          6787.2661    350.326     19.374      0.000    6100.636    7473.896
-RoadFurniture                       -1472.4406    117.687    -12.512      0.000   -1703.103   -1241.778
-PlaceNameAddress                    -9653.7403    407.675    -23.680      0.000   -1.05e+04   -8854.708
-PublicFacility                      -8049.7440    414.276    -19.431      0.000   -8861.714   -7237.774
-IncidentsandEvents                   1422.8444     94.980     14.980      0.000    1236.686    1609.003
-Indoorfacilities                    -1064.6848    172.099     -6.186      0.000   -1401.993    -727.376
-PassFacilities                      -1.366e+04    553.863    -24.671      0.000   -1.48e+04   -1.26e+04
+Intercept                            1.815e+04   1144.337     15.862      0.000    1.59e+04    2.04e+04
+AutoService                          -318.2477    180.670     -1.761      0.078    -672.413      35.918
+AutoDealers                          2235.4543    229.650      9.734      0.000    1785.273    2685.636
+AutoRepair                          -1534.4204    236.678     -6.483      0.000   -1998.378   -1070.463
+MotorcycleService                      23.2936     73.607      0.316      0.752    -120.997     167.584
+FoodBeverages                        -644.9779    125.628     -5.134      0.000    -891.244    -398.711
+Shopping                               82.6199    172.075      0.480      0.631    -254.698     419.938
+DailyLifeService                     -614.9914    160.017     -3.843      0.000    -928.671    -301.312
+SportsRecreation                     -487.5924    158.244     -3.081      0.002    -797.797    -177.388
+MedicalService                       -142.9470    161.561     -0.885      0.376    -459.654     173.760
+AccommodationService                  312.4724    116.548      2.681      0.007      84.003     540.941
+TouristAttraction                    1270.1086    116.237     10.927      0.000    1042.251    1497.967
+CommercialHouse                       -26.1004    103.495     -0.252      0.801    -228.980     176.779
+GovernmentalOrganizationSocialGroup   763.8384     98.091      7.787      0.000     571.551     956.126
+ScienceCultureEducationService        563.2973     99.021      5.689      0.000     369.187     757.408
+TransportationService                -583.0906    113.205     -5.151      0.000    -805.006    -361.175
+FinanceInsuranceService               605.8885    121.843      4.973      0.000     367.040     844.737
+Enterprises                           279.9137     95.020      2.946      0.003      93.647     466.181
+RoadFurniture                        -697.0469    132.489     -5.261      0.000    -956.763    -437.330
+PlaceNameAddress                      103.6793    149.566      0.693      0.488    -189.514     396.872
+PublicFacility                       -499.3558    139.606     -3.577      0.000    -773.024    -225.688
+IncidentsandEvents                   3109.6958    489.380      6.354      0.000    2150.368    4069.024
+Indoorfacilities                      -55.7886     19.411     -2.874      0.004     -93.841     -17.737
+PassFacilities                       -114.4076    120.922     -0.946      0.344    -351.449     122.634
 ==============================================================================
-Omnibus:                    49108.998   Durbin-Watson:                   0.718
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):            93799.510
-Skew:                           0.967   Prob(JB):                         0.00
-Kurtosis:                       4.821   Cond. No.                         166.
+Omnibus:                     2542.377   Durbin-Watson:                   1.210
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            31068.689
+Skew:                           1.319   Prob(JB):                         0.00
+Kurtosis:                      12.768   Cond. No.                     2.02e+03
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.02e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
