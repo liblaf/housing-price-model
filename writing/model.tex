@@ -1,0 +1,21 @@
+% !TeX root = main.tex
+\section{模型选择}
+受限于专业知识的不足, 本研究选用较为简单的模型作为示例进行分析.
+
+假设住房价格受到工业, 教育, 商业, 医疗, 交通, 旅游等周边因素的影响, 影响程度与住房与周边重要区位中心的距离有关.
+简单起见, 本研究选用直线距离作为权重, 选取若干企业, 学校, 商业中心, 医院, 交通枢纽, 作为 POI (Point of Interest), 可以得到住房与这些 POI 之间的直线距离.
+
+对于不同的 POI, 其影响力必然不同.
+假设选取的所有 POI 的影响范围 ($Scope$) 从 $e^3$, 按排名, 指数递减至 $e^{-3}$.
+考虑某个 $poi$, 其对房价的影响为
+\begin{equation*}
+    \delta\ipp{Price} = \exp\iBB{-\frac{Dist\ibb{poi}}{Scope\ibb{poi}}}
+\end{equation*}
+其中 $Dist\ibb{poi}$ 表示住房与该 POI 之间的直线距离.
+住房的价格近似满足
+\begin{equation*}
+    Price
+    = \sum_{category} \ipp{Impact\ibb{category} * \sum_{poi} \exp\iBB{-\frac{Dist\ibb{poi}}{Scope\ibb{poi}}}}
+\end{equation*}
+
+通过回归计算可以得到相应的系数 $Impact\ibb{category}$, 这表征着该类 POI 对于房价的影响程度.

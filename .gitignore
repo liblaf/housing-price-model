@@ -1,3 +1,6 @@
+__pycache__
+reference
+# latex files
 *.aux
 *.bbl
 *.blg
@@ -24,4 +27,6 @@
 *.nav
 *.vrb
 # large files
-data/colombia.csv
+*.png
+*.csv
+*.xlsx

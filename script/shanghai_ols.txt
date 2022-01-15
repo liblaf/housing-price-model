@@ -1,0 +1,47 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.669
+Model:                            OLS   Adj. R-squared:                  0.669
+Method:                 Least Squares   F-statistic:                     1026.
+Date:                Fri, 14 Jan 2022   Prob (F-statistic):               0.00
+Time:                        19:08:46   Log-Likelihood:            -1.2861e+05
+No. Observations:               11681   AIC:                         2.573e+05
+Df Residuals:                   11657   BIC:                         2.574e+05
+Df Model:                          23                                         
+Covariance Type:            nonrobust                                         
+=======================================================================================================
+                                          coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------------
+Intercept                            5.831e+04    135.516    430.290      0.000     5.8e+04    5.86e+04
+AutoService                          4485.2179   2958.481      1.516      0.130   -1313.901    1.03e+04
+AutoDealers                         -1.314e+04   3400.285     -3.864      0.000   -1.98e+04   -6472.280
+AutoRepair                           2.355e+04   3398.045      6.931      0.000    1.69e+04    3.02e+04
+MotorcycleService                   -5163.2587   1731.717     -2.982      0.003   -8557.715   -1768.803
+FoodBeverages                        1.732e+04   5334.764      3.246      0.001    6858.456    2.78e+04
+Shopping                             -1.98e+04   4782.643     -4.140      0.000   -2.92e+04   -1.04e+04
+DailyLifeService                    -2.733e+04   4166.625     -6.560      0.000   -3.55e+04   -1.92e+04
+SportsRecreation                     2.804e+04   4733.298      5.925      0.000    1.88e+04    3.73e+04
+MedicalService                      -2.839e+04   3702.048     -7.669      0.000   -3.56e+04   -2.11e+04
+AccommodationService                 2.178e+04   5048.071      4.315      0.000    1.19e+04    3.17e+04
+TouristAttraction                    2.234e+04   3267.202      6.839      0.000    1.59e+04    2.87e+04
+CommercialHouse                      2.568e+04   3682.428      6.973      0.000    1.85e+04    3.29e+04
+GovernmentalOrganizationSocialGroup -3591.9369   5100.385     -0.704      0.481   -1.36e+04    6405.671
+ScienceCultureEducationService       9646.3763   3142.715      3.069      0.002    3486.129    1.58e+04
+TransportationService               -8774.9469   2409.331     -3.642      0.000   -1.35e+04   -4052.255
+FinanceInsuranceService             -6954.3605   3784.954     -1.837      0.066   -1.44e+04     464.784
+Enterprises                         -5683.8533   2170.672     -2.618      0.009   -9938.734   -1428.973
+RoadFurniture                         780.7284    243.455      3.207      0.001     303.515    1257.942
+PlaceNameAddress                    -7488.4805    864.615     -8.661      0.000   -9183.270   -5793.691
+PublicFacility                      -2.027e+04   3427.256     -5.915      0.000    -2.7e+04   -1.36e+04
+IncidentsandEvents                   1617.3493   1229.269      1.316      0.188    -792.224    4026.923
+Indoorfacilities                     -786.7747    599.563     -1.312      0.189   -1962.019     388.470
+PassFacilities                       1.292e+04   5790.434      2.232      0.026    1571.618    2.43e+04
+==============================================================================
+Omnibus:                     5219.570   Durbin-Watson:                   1.042
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           144950.970
+Skew:                           1.561   Prob(JB):                         0.00
+Kurtosis:                      19.973   Cond. No.                         241.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
