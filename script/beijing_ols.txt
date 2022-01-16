@@ -4,7 +4,7 @@ Dep. Variable:                  price   R-squared:                       0.732
 Model:                            OLS   Adj. R-squared:                  0.731
 Method:                 Least Squares   F-statistic:                     863.3
 Date:                Sun, 16 Jan 2022   Prob (F-statistic):               0.00
-Time:                        00:07:06   Log-Likelihood:                -80268.
+Time:                        23:53:49   Log-Likelihood:                -80268.
 No. Observations:                7284   AIC:                         1.606e+05
 Df Residuals:                    7260   BIC:                         1.607e+05
 Df Model:                          23                                         

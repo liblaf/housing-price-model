@@ -2,16 +2,62 @@
 \usepackage{ctex}
 \usepackage{imath}
 
-\title{title}
-\author{李泽宇; 李钦}
-\date{}
+\title{基于多元回归模型对住房价格的预测与影响因素分析}
+\author{李泽宇, 李钦, 陈奕玮}
+% \date{}
+
+\bibliographystyle{acm}
 
 \begin{document}
-\maketitle
+\begin{center}
+  \vspace*{1cm}
+
+  \Huge
+  \textbf{基于多元回归模型对住房价格的预测与影响因素分析}
+
+  \vspace{0.5cm}
+  \LARGE
+  \textbf{}
+
+  \vspace{1.5cm}
+
+  \begin{tabular}{rll}
+    \textbf{李钦}   & \textbf{2020012872} & \textbf{未央-水木 02} \\
+    \textbf{李泽宇} & \textbf{2020012879} & \textbf{未央-水木 02} \\
+    \textbf{陈奕玮} & \textbf{2020012881} & \textbf{未央-水木 02} \\
+  \end{tabular}
+
+  \vspace{1cm}
+
+  \textbf{指导教师: \quad 吴璟}
+
+  \vfill
+
+  \textbf{Engineering Economy}
+
+  \vspace{0.8cm}
+
+  \includegraphics[width=0.4\textwidth]{/mnt/d/images/Tsinghua_University_Logo.png}
+
+  \Large
+  \textbf{Weiyang College}
+
+  \textbf{Tsinghua University}
+
+  \textbf{}
+
+  \textbf{\today}
+
+\end{center}
+\newpage
 
 \begin{abstract}
   房价问题一直以来都是百姓关注的热门话题.
-  作为国家的支柱产业之一, 房地产的走势常常能够影响到区域经济的发展.
+  作为国家的支柱产业之一, 房价的走势与区域经济的发展常常有着密不可分的联系.
+  在城市元素日益多样化, 商品住房因金融属性的增加而呈现较大的不确定性的今天, 影响房价的相关因素的分析显得尤为重要.
+  本研究着眼于住房周边的地点, 探究住房周边设施, 场所等区位因素及其距离远近对于住房价格的影响, 并根据建立的简单模型进行拟合, 取得较为良好的估测效果.
+
+  本项目已在 \url{https://github.com/godvix/housing-price-model} 开源.
 
   \paragraph{关键词:}
   住房价格; 多元回归分析; POI
@@ -21,13 +67,26 @@
 \listoffigures
 \listoftables
 
-\input{background.tex}
+\input{introduction.tex}
+\input{related.tex}
 \input{model.tex}
-% \input{analysis.tex}
+\input{data.tex}
+\input{analysis.tex}
+\input{application.tex}
 \input{future.tex}
+\input{conclusion.tex}
 
-% \appendix
+\bibliography{reference.bib}
+
+\appendix
 % \input{center.tex}
-% \input{result.tex}
+\input{result.tex}
+
+\section{成员分工}
+\begin{description}
+  \item[李钦] 摘要, 引言, 模型选择, POI 数据爬取, 回归计算与样本估测
+  \item[李泽宇] 数据分析, 模型评价, 应用场景, 未来工作
+  \item[陈奕玮] 引言, 相关工作, 数据来源, 总结
+\end{description}
 
 \end{document}

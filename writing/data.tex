@@ -1,0 +1,25 @@
+% !TeX root = main.tex
+\section{数据来源}
+为了对房价的区位因素进行分析, 本研究需要北京与上海两地各个小区房价, 各类设施位置与排名两方面数据.
+对于两地各小区房价, 采用网络上的两地2018年的各小区房价信息, 如图 \ref{fig:housing} 所示.
+
+\begin{figure}[H]
+  \centering
+  \subcaptionbox{北京市}{\includegraphics[width=.45\linewidth]{figures/beijing_housing.png}}
+  \subcaptionbox{上海市}{\includegraphics[width=.45\linewidth]{figures/shanghai_housing.png}}
+  \caption{住房价格样本分布}
+  \label{fig:housing}
+\end{figure}
+
+对于两地各类设施位置, 利用高德地图的POI搜索功能, 能够获取两地地图上的全部设施的信息, 如图 \ref{fig:poi} 所示.
+
+\begin{figure}[H]
+  \centering
+  \subcaptionbox{北京市}{\includegraphics[width=.45\linewidth]{figures/beijing_poi.png}}
+  \subcaptionbox{上海市}{\includegraphics[width=.45\linewidth]{figures/shanghai_poi.png}}
+  \caption{POI 分布}
+  \label{fig:poi}
+\end{figure}
+
+令人惊喜的是, 所有的设施已经被高德开放平台划入了一定的类别.
+基于本文研究目标, 本文对高德开放平台分类进行了一些调整: 对一些类别进行了合并, 对一些与研究目的无关的设施信息进行了删除.
